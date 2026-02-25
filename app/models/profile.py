@@ -13,8 +13,10 @@ class Profile(TimeStampedModel, Base):
     email: Mapped[str] = mapped_column(String, nullable=False)
     bio: Mapped[str] = mapped_column(Text, nullable=True)
 
-    github_url: Mapped[str] = mapped_column(String, nullable=True)
+    facebook_url: Mapped[str] = mapped_column(String, nullable=True)
+    twitter_url: Mapped[str] = mapped_column(String, nullable=True)
     linkedin_url: Mapped[str] = mapped_column(String, nullable=True)
+    instagram_url: Mapped[str] = mapped_column(String, nullable=True)
     website_url: Mapped[str] = mapped_column(String, nullable=True)
 
     avatar_image: Mapped[str] = mapped_column(String, nullable=True)
